@@ -9,5 +9,5 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/report.html"},
         features = {"src/test/resources/features"},
         glue = {"steps"},
-        tags = "@RunTest")
+        tags = "@Gorest")
 public class RunTest {}
