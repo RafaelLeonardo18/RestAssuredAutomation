@@ -1,7 +1,7 @@
 package api;
 
-import io.cucumber.messages.internal.com.google.gson.JsonObject;
 import io.restassured.response.Response;
+import org.json.JSONObject;
 import utils.LogUtils;
 
 import java.util.HashMap;
@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class ApiUtils extends LogUtils {
 
     protected static Response response;
-    protected static JsonObject body;
+    protected static JSONObject body;
     protected static String uri;
     protected static Map<String, String> headers = new HashMap<String, String>();
     protected static Map<String, String> params = new HashMap<String, String>();

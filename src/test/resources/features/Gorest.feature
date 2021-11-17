@@ -11,4 +11,4 @@ Funcionalidade: Criar e editar conta de usuários
     Dado que possuo gorest token valido
     Quando envio um request de cadastro de usuario com dados validos
     Entao o usuario deve ser criado corretamente
-    E o status code do response deve ser 200
+    E o status code do response deve ser 201

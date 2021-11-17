@@ -1,14 +1,15 @@
 package api;
 
-import utils.PropertiesUtils;
+import java.util.HashMap;
+import java.util.Map;
 
-public class ApiHeaders extends ApiUtils{
+public class ApiHeaders {
 
-    PropertiesUtils properties = new PropertiesUtils();
-
-    public void gorestHeaders(){
+    public static Map<String, String> gorestHeaders(String token){
+        Map<String, String> headers = new HashMap<String, String>();
         headers.put("Accept","application/json");
         headers.put("Content-Type","application/json");
         headers.put("Authorization", token);
+        return headers;
     }
 }
