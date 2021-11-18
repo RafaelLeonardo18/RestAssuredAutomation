@@ -2,11 +2,11 @@ package steps;
 
 import api.ApiHeaders;
 import api.ApiRequests;
+import com.github.javafaker.Faker;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
-import org.json.JSONObject;
 import utils.JsonUtils;
 import utils.PropertiesUtils;
 
@@ -27,7 +27,9 @@ public class GorestSteps extends ApiRequests {
     public void envioUmRequestDeCadastroDeUsuarioComDadosValidos() throws Exception {
         super.uri = properties.getProperties("uri_gorest");
         super.headers = ApiHeaders.gorestHeaders(token);
-        super.body = JsonUtils.parseJsonFile();
+        super.body = JsonUtils.parseJsonFile("create_user");
+        super.body.put("name", new Faker().funnyName().name());
+        super.body.put("email", new Faker().internet().emailAddress());
         super.POST();
     }
 
