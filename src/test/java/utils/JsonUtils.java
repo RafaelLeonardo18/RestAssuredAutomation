@@ -3,6 +3,7 @@ package utils;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Iterator;
+import java.util.Map;
 
 import org.json.JSONObject;
 
@@ -39,6 +40,20 @@ public class JsonUtils {
             }
         });
         return json;
+    }
+
+    public static JSONObject updateMultiJsonValues(JSONObject oldJson, Map <String, String> keyValues) throws Exception {
+        JSONObject newJson = new JSONObject();
+        for (Map.Entry<String, String> entry : keyValues.entrySet()){
+            String key = entry.getKey();
+            String value = entry.getValue();
+            try {
+                newJson = updateJsonObject(oldJson, key, value);
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return newJson;
     }
 
 }
