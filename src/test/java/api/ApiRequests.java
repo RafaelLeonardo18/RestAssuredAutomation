@@ -2,6 +2,12 @@ package api;
 
 import static io.restassured.RestAssured.given;
 
+/**************************************************************************************************
+* Descrição: classe de implementação das requisições HTTP utilizadas na automação
+* Autor: Rafael Leonardo de Lima
+* Data de criação: 16/11/2021
+* **************************************************************************************************/
+
 public class ApiRequests extends ApiUtils implements ApiVerbose {
 
     @Override

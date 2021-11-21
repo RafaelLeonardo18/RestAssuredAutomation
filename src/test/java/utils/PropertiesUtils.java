@@ -2,6 +2,12 @@ package utils;
 
 import java.util.Properties;
 
+/**************************************************************************************************
+* Descrição: classe utilitária que faz a configuração de ambiente da API
+* Autor: Rafael Leonardo de Lima
+* Data de criação: 17/11/2021
+ * ************************************************************************************************/
+
 public class PropertiesUtils {
 
     Properties properties = new Properties();

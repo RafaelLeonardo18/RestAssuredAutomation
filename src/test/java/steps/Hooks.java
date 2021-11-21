@@ -6,6 +6,12 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import utils.ScenarioUtils;
 
+/**************************************************************************************************
+* Descrição: classe que prepara a execução dos cenários
+* Autor: Rafael Leonardo de Lima
+* Data de criação: 17/11/2021
+ * ************************************************************************************************/
+
 public class Hooks extends ApiUtils {
 
     @Before
