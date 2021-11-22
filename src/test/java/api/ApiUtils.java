@@ -16,12 +16,12 @@ import java.util.concurrent.TimeUnit;
 
 public class ApiUtils extends LogUtils {
 
-    protected static Response response;
-    protected static JSONObject body;
-    protected static String uri;
-    protected static Map<String, String> headers = new HashMap<String, String>();
-    protected static Map<String, String> params = new HashMap<String, String>();
-    protected static String token;
+    protected Response response;
+    protected JSONObject body;
+    protected String uri;
+    protected Map<String, String> headers = new HashMap<String, String>();
+    protected Map<String, String> params = new HashMap<String, String>();
+    protected String token;
 
     //Método para exibir os logs da requisição e resposta
     public void log(String verbose){
