@@ -5,6 +5,12 @@ import io.cucumber.java.Scenario;
 import java.util.HashMap;
 import java.util.Map;
 
+/**************************************************************************************************
+* Descrição: classe que gerencia a construção dos cenários
+* Autor: Rafael Leonardo de Lima
+* Data de criação: 17/11/2021
+ * ************************************************************************************************/
+
 public class ScenarioUtils {
 
     private static Map<Long, Scenario> repository = new HashMap<Long, Scenario>();

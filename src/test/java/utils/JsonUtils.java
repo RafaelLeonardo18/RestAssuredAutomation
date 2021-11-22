@@ -7,6 +7,12 @@ import java.util.Map;
 
 import org.json.JSONObject;
 
+/**************************************************************************************************
+* Descrição: classe com métodos utilitários para realizar operações com JSON
+* Autor: Rafael Leonardo de Lima
+* Data de criação: 18/11/2021
+ * ************************************************************************************************/
+
 public class JsonUtils {
 
     public static JSONObject parseJsonFile(String jsonFile) throws Exception {

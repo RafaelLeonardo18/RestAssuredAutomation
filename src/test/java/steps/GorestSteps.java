@@ -1,18 +1,23 @@
 package steps;
 
+import api.ApiBodies;
 import api.ApiHeaders;
 import api.ApiRequests;
-import com.github.javafaker.Faker;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
-import user.User;
 import utils.PropertiesUtils;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertAll;
+
+/**************************************************************************************************
+* Descrição: classe de implementação dos Steps da Feature 'Gorest.feature'
+* Autor: Rafael Leonardo de Lima
+* Data de criação: 17/11/2021
+ * ************************************************************************************************/
 
 public class GorestSteps extends ApiRequests {
 
@@ -26,12 +31,8 @@ public class GorestSteps extends ApiRequests {
     @Quando("envio um request de cadastro de usuario com dados validos")
     public void envioUmRequestDeCadastroDeUsuarioComDadosValidos() throws Exception {
         super.uri = properties.getProperties("uri_gorest");
-        super.headers = ApiHeaders.gorestHeaders(token);
-//        Map<String, String> keyValues = new HashMap<String, String>();
-//        keyValues.put("email", new Faker().internet().emailAddress());
-//        keyValues.put("name", new Faker().funnyName().name());
-//        super.body = JsonUtils.updateMultiJsonValues(JsonUtils.parseJsonFile("create_user"), keyValues);
-        super.body = new User(new Faker().funnyName().name(), "male", new Faker().internet().emailAddress(), "active").getJson();
+        super.headers = ApiHeaders.createRequestHeaders(super.uri, super.token);
+        super.body = ApiBodies.createRequestBody(super.uri);
         super.POST();
     }
 
