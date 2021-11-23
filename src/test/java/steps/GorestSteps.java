@@ -3,10 +3,12 @@ package steps;
 import api.ApiBodies;
 import api.ApiHeaders;
 import api.ApiRequests;
+import com.google.gson.Gson;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
+import user.UserConstrutor;
 import utils.PropertiesUtils;
 
 import static org.junit.Assert.assertEquals;
@@ -38,12 +40,9 @@ public class GorestSteps extends ApiRequests {
 
     @Entao("o usuario deve ser criado corretamente")
     public void usuarioDeveSerCriadoCorretamente() {
-        assertAll("Validação do body",
-            () -> assertEquals("Nome deve ser igual ao da requisição", response.jsonPath().getString("data.name"), super.body.get("name")),
-            () -> assertEquals("Gênero deve ser igual ao da requisição", response.jsonPath().getString("data.gender"), super.body.get("gender")),
-            () -> assertEquals("Email deve ser igual ao da requisição", response.jsonPath().getString("data.email"), super.body.get("email")),
-            () -> assertEquals("Status deve ser igual ao da requisição", response.jsonPath().getString("data.status"), super.body.get("status"))
-        );
+        UserConstrutor userRequest = new Gson().fromJson(super.body.toString(), UserConstrutor.class);
+        UserConstrutor userResponse = response.jsonPath().getObject("data", UserConstrutor.class);
+        assertTrue("Os objetos não são iguais", userRequest.equals(userResponse));
     }
 
     @E("o status code do response deve ser {int}")

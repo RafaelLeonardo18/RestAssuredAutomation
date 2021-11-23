@@ -1,12 +1,13 @@
 package user;
 
-import lombok.Builder;
+import lombok.*;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import payload.Payload;
 
 @Data
 @Builder
+@Getter
+@Setter
 @EqualsAndHashCode(callSuper = true)
 public class UserLombok extends Payload {
 
