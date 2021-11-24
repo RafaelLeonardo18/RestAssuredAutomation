@@ -13,7 +13,7 @@ public class ApiHeaders {
 
     public static Map<String, String> createRequestHeaders(String uri, String token) {
         Map<String, String> requestHeaders = new HashMap<String, String>();
-        if (uri.equals("https://gorest.co.in/public/v1/users")){
+        if (uri.contains("https://gorest.co.in/public/v1/users")){
             requestHeaders = gorestHeaders(token);
         }
         return requestHeaders;
