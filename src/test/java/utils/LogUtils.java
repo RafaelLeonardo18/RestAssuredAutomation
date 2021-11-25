@@ -9,13 +9,13 @@ package utils;
 public class LogUtils {
 
     public void logInfo(String text){
-        if (!text.contains("{}")){
+        if (!text.contains("{}") && text != null){
             ScenarioUtils.addText(text);
         }
     }
 
     public void logError(String errorText){
-        if (!errorText.contains("{}")){
+        if (!errorText.contains("{}") && errorText != null){
             ScenarioUtils.addText(errorText);
         }
     }
