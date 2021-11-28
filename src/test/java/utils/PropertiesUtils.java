@@ -10,14 +10,13 @@ import java.util.Properties;
 
 public class PropertiesUtils {
 
-    Properties properties = new Properties();
-
-    public String getProperties(String key){
+    public static String getProperties(String key){
+        Properties properties = new Properties();
         try {
             if (System.getProperty("env") == null){
-                properties.load(getClass().getClassLoader().getResourceAsStream("hom.properties"));
+                properties.load(PropertiesUtils.class.getClassLoader().getResourceAsStream("hom.properties"));
             } else {
-                properties.load(getClass().getClassLoader().getResourceAsStream(System.getProperty("env")));
+                properties.load(PropertiesUtils.class.getClassLoader().getResourceAsStream(System.getProperty("env")));
             }
         } catch (Exception e){
             e.printStackTrace();

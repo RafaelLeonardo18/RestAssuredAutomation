@@ -1,0 +1,691 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que possuo gorest token valido",
+            "match": {
+              "location": "steps.GorestSteps.quePossuoGorestTokenValido()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-28T19:40:37.705Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15627900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Cadastrar novo usuário API Gorest",
+        "description": "",
+        "id": "criar-e-editar-conta-de-usuários;cadastrar-novo-usuário-api-gorest",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "output": [
+              "******* Dados enviados no request *******",
+              "POST https://gorest.co.in/public/v1/users",
+              "Body: \n{\"gender\":\"male\",\"name\":\"Hy Gene\",\"email\":\"winford.hickle@yahoo.com\",\"status\":\"active\"}",
+              "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "******* Dados recebidos do response *******",
+              "Status Code: 201",
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 2777,\n        \"name\": \"Hy Gene\",\n        \"email\": \"winford.hickle@yahoo.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
+              "Tempo de resposta: 3157"
+            ],
+            "result": {
+              "duration": 5781251500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "envio um request de cadastro de usuario com dados validos",
+            "match": {
+              "location": "steps.GorestSteps.envioUmRequestDeCadastroDeUsuarioComDadosValidos()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "o status code do response deve ser 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "steps.GorestSteps.statusCodeDoResponseDeveSer(java.lang.Integer)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 1078121800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "o usuario deve ser criado corretamente",
+            "match": {
+              "location": "steps.GorestSteps.usuarioDeveSerCriadoCorretamente()"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Gorest"
+          },
+          {
+            "name": "@POST"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que possuo gorest token valido",
+            "match": {
+              "location": "steps.GorestSteps.quePossuoGorestTokenValido()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-28T19:40:44.752Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Consultar usuario na API",
+        "description": "",
+        "id": "criar-e-editar-conta-de-usuários;consultar-usuario-na-api",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "output": [
+              "******* Dados enviados no request *******",
+              "POST https://gorest.co.in/public/v1/users",
+              "Body: \n{\"gender\":\"male\",\"name\":\"Polly Dent\",\"email\":\"dorsey.shanahan@hotmail.com\",\"status\":\"active\"}",
+              "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "******* Dados recebidos do response *******",
+              "Status Code: 201",
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 2778,\n        \"name\": \"Polly Dent\",\n        \"email\": \"dorsey.shanahan@hotmail.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
+              "Tempo de resposta: 2141"
+            ],
+            "result": {
+              "duration": 2281245800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "existe um usuário cadastrado na API",
+            "match": {
+              "location": "steps.GorestSteps.existeUmUsuárioCadastradoNaAPI()"
+            },
+            "keyword": "E "
+          },
+          {
+            "output": [
+              "******* Dados enviados no request *******",
+              "GET https://gorest.co.in/public/v1/users/2778",
+              "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "******* Dados recebidos do response *******",
+              "Status Code: 200",
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 2778,\n        \"name\": \"Polly Dent\",\n        \"email\": \"dorsey.shanahan@hotmail.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
+              "Tempo de resposta: 2140"
+            ],
+            "result": {
+              "duration": 2187531300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "consultar este usuário",
+            "match": {
+              "location": "steps.GorestSteps.consultarEsteUsuário()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "o status code do response deve ser 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "steps.GorestSteps.statusCodeDoResponseDeveSer(java.lang.Integer)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "os dados do usuário devem ser exibidos na resposta",
+            "match": {
+              "location": "steps.GorestSteps.osDadosDoUsuárioDevemSerExibidosNaResposta()"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Gorest"
+          },
+          {
+            "name": "@GET"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que possuo gorest token valido",
+            "match": {
+              "location": "steps.GorestSteps.quePossuoGorestTokenValido()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-28T19:40:49.252Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Editar usuario na API",
+        "description": "",
+        "id": "criar-e-editar-conta-de-usuários;editar-usuario-na-api",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "output": [
+              "******* Dados enviados no request *******",
+              "POST https://gorest.co.in/public/v1/users",
+              "Body: \n{\"gender\":\"male\",\"name\":\"Will Power\",\"email\":\"stephany.kulas@gmail.com\",\"status\":\"active\"}",
+              "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "******* Dados recebidos do response *******",
+              "Status Code: 201",
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 2779,\n        \"name\": \"Will Power\",\n        \"email\": \"stephany.kulas@gmail.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
+              "Tempo de resposta: 2062"
+            ],
+            "result": {
+              "duration": 2249996600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "existe um usuário cadastrado na API",
+            "match": {
+              "location": "steps.GorestSteps.existeUmUsuárioCadastradoNaAPI()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 46884800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "altero os dados do usuário",
+            "match": {
+              "location": "steps.GorestSteps.alteroOsDadosDoUsuário()"
+            },
+            "keyword": "E "
+          },
+          {
+            "output": [
+              "******* Dados enviados no request *******",
+              "PUT https://gorest.co.in/public/v1/users/2779",
+              "Body: \n{\"gender\":\"male\",\"name\":\"Neve Adda\",\"email\":\"zaida.block@hotmail.com\",\"status\":\"active\"}",
+              "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "******* Dados recebidos do response *******",
+              "Status Code: 200",
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"email\": \"zaida.block@hotmail.com\",\n        \"name\": \"Neve Adda\",\n        \"gender\": \"male\",\n        \"status\": \"active\",\n        \"id\": 2779\n    }\n}",
+              "Tempo de resposta: 2110"
+            ],
+            "result": {
+              "duration": 2156324200,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "envio request para editar o usuário",
+            "match": {
+              "location": "steps.GorestSteps.envioRequestParaEditarOUsuário()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "o status code do response deve ser 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "steps.GorestSteps.statusCodeDoResponseDeveSer(java.lang.Integer)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 31177600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "o usuário deve ser alterado com sucesso",
+            "match": {
+              "location": "steps.GorestSteps.oUsuárioDeveSerAlteradoComSucesso()"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Gorest"
+          },
+          {
+            "name": "@PUT"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 15632300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que possuo gorest token valido",
+            "match": {
+              "location": "steps.GorestSteps.quePossuoGorestTokenValido()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-28T19:40:53.767Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Editar parcialmente usuario na API",
+        "description": "",
+        "id": "criar-e-editar-conta-de-usuários;editar-parcialmente-usuario-na-api",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "output": [
+              "******* Dados enviados no request *******",
+              "POST https://gorest.co.in/public/v1/users",
+              "Body: \n{\"gender\":\"male\",\"name\":\"May Day\",\"email\":\"tyler.marquardt@yahoo.com\",\"status\":\"active\"}",
+              "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "******* Dados recebidos do response *******",
+              "Status Code: 201",
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 2780,\n        \"name\": \"May Day\",\n        \"email\": \"tyler.marquardt@yahoo.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
+              "Tempo de resposta: 2156"
+            ],
+            "result": {
+              "duration": 2218824300,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "existe um usuário cadastrado na API",
+            "match": {
+              "location": "steps.GorestSteps.existeUmUsuárioCadastradoNaAPI()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "altero algum dado do usuário",
+            "match": {
+              "location": "steps.GorestSteps.alteroAlgumDadoDoUsuário()"
+            },
+            "keyword": "E "
+          },
+          {
+            "output": [
+              "******* Dados enviados no request *******",
+              "PATCH https://gorest.co.in/public/v1/users/2780",
+              "Body: \n{\"gender\":\"female\"}",
+              "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "******* Dados recebidos do response *******",
+              "Status Code: 200",
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"gender\": \"female\",\n        \"id\": 2780,\n        \"name\": \"May Day\",\n        \"email\": \"tyler.marquardt@yahoo.com\",\n        \"status\": \"active\"\n    }\n}",
+              "Tempo de resposta: 2313"
+            ],
+            "result": {
+              "duration": 2343748100,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "envio request para editar parcialmente o usuário",
+            "match": {
+              "location": "steps.GorestSteps.envioRequestParaEditarParcialmenteOUsuário()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "o status code do response deve ser 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "steps.GorestSteps.statusCodeDoResponseDeveSer(java.lang.Integer)"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 31196000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "o usuário deve ser alterado com sucesso",
+            "match": {
+              "location": "steps.GorestSteps.oUsuárioDeveSerAlteradoComSucesso()"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Gorest"
+          },
+          {
+            "name": "@PATCH"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que possuo gorest token valido",
+            "match": {
+              "location": "steps.GorestSteps.quePossuoGorestTokenValido()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-28T19:40:58.392Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "Excluir usuario na API",
+        "description": "",
+        "id": "criar-e-editar-conta-de-usuários;excluir-usuario-na-api",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "output": [
+              "******* Dados enviados no request *******",
+              "POST https://gorest.co.in/public/v1/users",
+              "Body: \n{\"gender\":\"male\",\"name\":\"Barry D. Hatchett\",\"email\":\"sudie.king@gmail.com\",\"status\":\"active\"}",
+              "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "******* Dados recebidos do response *******",
+              "Status Code: 201",
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 2781,\n        \"name\": \"Barry D. Hatchett\",\n        \"email\": \"sudie.king@gmail.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
+              "Tempo de resposta: 2078"
+            ],
+            "result": {
+              "duration": 2140697900,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "existe um usuário cadastrado na API",
+            "match": {
+              "location": "steps.GorestSteps.existeUmUsuárioCadastradoNaAPI()"
+            },
+            "keyword": "E "
+          },
+          {
+            "output": [
+              "******* Dados enviados no request *******",
+              "DELETE https://gorest.co.in/public/v1/users/2781",
+              "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "******* Dados recebidos do response *******",
+              "Status Code: 204",
+              "Payload recebido: \n",
+              "Tempo de resposta: 2063"
+            ],
+            "result": {
+              "duration": 2093689300,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "envio request para excluir este usuário",
+            "match": {
+              "location": "steps.GorestSteps.envioRequestParaExcluirEsteUsuário()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "o status code do response deve ser 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 35
+                }
+              ],
+              "location": "steps.GorestSteps.statusCodeDoResponseDeveSer(java.lang.Integer)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "output": [
+              "******* Dados enviados no request *******",
+              "GET https://gorest.co.in/public/v1/users/2781",
+              "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "******* Dados recebidos do response *******",
+              "Status Code: 404",
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"message\": \"Resource not found\"\n    }\n}",
+              "Tempo de resposta: 2078"
+            ],
+            "result": {
+              "duration": 2078103800,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "o usuário deve ser excluido com sucesso",
+            "match": {
+              "location": "steps.GorestSteps.oUsuárioDeveSerExcluidoComSucesso()"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Gorest"
+          },
+          {
+            "name": "@DELETE"
+          }
+        ]
+      }
+    ],
+    "name": "Criar e editar conta de usuários",
+    "description": "  Eu como administrador do sistema\n  Quero cadastrar, editar e excluir usuários do sistema\n  Para administrar os utilizadores da aplicação",
+    "id": "criar-e-editar-conta-de-usuários",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/Gorest.feature",
+    "tags": [
+      {
+        "name": "@Gorest",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
