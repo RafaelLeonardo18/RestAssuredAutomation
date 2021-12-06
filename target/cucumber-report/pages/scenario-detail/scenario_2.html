@@ -78,10 +78,9 @@ font-src * data: blob: 'unsafe-inline';"/>
   "data": {
     "labels": [
       "steps.Hooks.setup(io.cucumber.java.Scenario)",
-      "existe um usuário cadastrado na API",
-      "consultar este usuário",
-      "o status code do response deve ser 200",
-      "os dados do usuário devem ser exibidos na resposta",
+      "envio um request de consulta para a API Correios usando DataTable",
+      "o status code deve ser 200",
+      "o valor do frete deve ser igual a \"40,60\"",
       "steps.Hooks.tearDown()"
     ],
     "datasets": [
@@ -89,14 +88,12 @@ font-src * data: blob: 'unsafe-inline';"/>
         "data": [
           0,
           0,
-          2,
-          2,
+          0,
           0,
           0,
           0
         ],
         "backgroundColor": [
-          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
@@ -114,11 +111,9 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
-          0,
           0
         ],
         "backgroundColor": [
-          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
@@ -136,11 +131,9 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
-          0,
           0
         ],
         "backgroundColor": [
-          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
@@ -174,7 +167,7 @@ font-src * data: blob: 'unsafe-inline';"/>
         {
           "ticks": {
             "min": 0,
-            "stepSize": 2,
+            "stepSize": 0,
             "display": true
           },
           "stacked": true,
@@ -277,17 +270,17 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link " href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2021-11-28 16:41:14</span>
+            <span class="text-light">2021-12-05 23:46:21</span>
         </div>
     </nav>
     <main role="main" class="container">
         <div class="cluecumber-template">
             <div class="pb-2 mt-4 mb-2 border-bottom">
                     <h5>
-                            <a href="pages/feature-scenarios/feature_0.html">Criar e editar conta de usuários</a>
-                        <span class="small">file:src/test/resources/features/Gorest.feature</span>
+                            <a href="pages/feature-scenarios/feature_0.html">Calcular valor de fretes</a>
+                        <span class="small">file:src/test/resources/features/Correios.feature</span>
                     </h5>
-                    <h3>Consultar usuario na API</h3>
+                    <h3>Calcular frete usando DataTable</h3>
             </div>
 
     <div class="row" id="scenario-detail">
@@ -305,13 +298,15 @@ font-src * data: blob: 'unsafe-inline';"/>
         <div class="card h-100">
                 <div class="card-header">Scenario Info</div>
             <div class="card-body">
-                <li class="list-group-item">Started on:<br>2021-11-28 16:40:44</li>
-                <li class="list-group-item">Ended on:<br>2021-11-28 16:40:49</li>
-            <li class="list-group-item">Test Runtime:<br>0m 04s 468ms</li>
+                <li class="list-group-item">Started on:<br>2021-12-05 23:45:48</li>
+                <li class="list-group-item">Ended on:<br>2021-12-05 23:45:48</li>
+            <li class="list-group-item">Test Runtime:<br>0m 00s 285ms</li>
             <li class="list-group-item">
-                    <a href="pages/tag-scenarios/tag_Gorest.html">@Gorest</a>,
+                    <a href="pages/tag-scenarios/tag_Fretes.html">@Fretes</a>,
 
-                    <a href="pages/tag-scenarios/tag_GET.html">@GET</a>            </li>
+                    <a href="pages/tag-scenarios/tag_Regressivo.html">@Regressivo</a>,
+
+                    <a href="pages/tag-scenarios/tag_DATATABLE.html">@DATATABLE</a>            </li>
             </div>
         </div>
     </div>
@@ -321,11 +316,11 @@ font-src * data: blob: 'unsafe-inline';"/>
             <div class="card-body">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                    4         Steps
+                    3         Steps
 
                 </li>
                 <li class="list-group-item">
-                    4 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+                    3 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
 
                     <br>
@@ -355,9 +350,9 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">1.</span>
-                                <span data-toggle="tooltip" title="steps.GorestSteps.quePossuoGorestTokenValido()">
-                                    <a href="pages/step-scenarios/step_436813920.html"><span
-                                                class="keyword">Dado </span> que possuo gorest token valido</a>
+                                <span data-toggle="tooltip" title="steps.CorreioSteps.quePossuoDadosVálidosParaConsultaNaAPICorreios()">
+                                    <a href="pages/step-scenarios/step_0983597665.html"><span
+                                                class="keyword">Dado </span> que possuo dados válidos para consulta na API Correios</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
@@ -384,32 +379,60 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">1.</span>
-                                <span data-toggle="tooltip" title="steps.GorestSteps.existeUmUsuárioCadastradoNaAPI()">
-                                    <a href="pages/step-scenarios/step_01243919266.html"><span
-                                                class="keyword">E </span> existe um usuário cadastrado na API</a>
+                                <span data-toggle="tooltip" title="steps.CorreioSteps.envioUmRequestDeConsultaParaAAPICorreiosUsandoDataTable(io.cucumber.datatable.DataTable)">
+                                    <a href="pages/step-scenarios/step_1455034894.html"><span
+                                                class="keyword">Quando </span> envio um request de consulta para a API Correios usando DataTable</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 02s 281ms
+                                0m 00s 216ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
                             </div>
 
+                                <div class="row w-100 p-3 m-0 scenarioDataTable">
+                                    <div class="w-100 text-left border border-dark table-responsive">
+                                        <table class="table table-hover small table-striped text-left pb-0">
+                                                <tr>
+                                                        <td>sCepOrigem</td>
+                                                        <td>sCepDestino</td>
+                                                        <td>nVlPeso</td>
+                                                        <td>nVlComprimento</td>
+                                                        <td>nVlAltura</td>
+                                                        <td>nVlLargura</td>
+                                                </tr>
+                                                <tr>
+                                                        <td>74371520</td>
+                                                        <td>1327000</td>
+                                                        <td>3.00</td>
+                                                        <td>40.00</td>
+                                                        <td>20.00</td>
+                                                        <td>25</td>
+                                                </tr>
+                                        </table>
+                                    </div>
+                                </div>
         <div class="row w-100 p-3 m-0 scenarioOutput">
-            <div class="w-100 text-left small p-2">******* Dados enviados no request *******<br><br>POST https://gorest.co.in/public/v1/users<br><br>Body: 
-{"gender":"male","name":"Polly Dent","email":"dorsey.shanahan@hotmail.com","status":"active"}<br><br>Headers: {Authorization=Bearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept=application/json, Content-Type=application/json}<br><br>******* Dados recebidos do response *******<br><br>Status Code: 201<br><br>Payload recebido: 
-{
-    "meta": null,
-    "data": {
-        "id": 2778,
-        "name": "Polly Dent",
-        "email": "dorsey.shanahan@hotmail.com",
-        "gender": "male",
-        "status": "active"
-    }
-}<br><br>Tempo de resposta: 2141</div>
+            <div class="w-100 text-left small p-2">******* Dados enviados no request *******<br><br>GET http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx<br><br>Body: 
+null<br><br>Params: {StrRetorno=xml, nVlPeso=3.00, nVlLargura=25, nVlComprimento=40.00, nCdServico=04510, sCepDestino=1327000, sCepOrigem=74371520, nVlAltura=20.00}<br><br>******* Dados recebidos do response *******<br><br>Status Code: 200<br><br>Payload recebido: 
+<Servicos>
+  <cServico>
+    <Codigo>04510</Codigo>
+    <Valor>40,60</Valor>
+    <PrazoEntrega>7</PrazoEntrega>
+    <ValorSemAdicionais>40,60</ValorSemAdicionais>
+    <ValorMaoPropria>0,00</ValorMaoPropria>
+    <ValorAvisoRecebimento>0,00</ValorAvisoRecebimento>
+    <ValorValorDeclarado>0,00</ValorValorDeclarado>
+    <EntregaDomiciliar>S</EntregaDomiciliar>
+    <EntregaSabado>N</EntregaSabado>
+    <obsFim/>
+    <Erro>0</Erro>
+    <MsgErro/>
+  </cServico>
+</Servicos><br><br>Tempo de resposta: 201</div>
         </div>
                         </div>
 
@@ -417,64 +440,32 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">2.</span>
-                                <span data-toggle="tooltip" title="steps.GorestSteps.consultarEsteUsuário()">
-                                    <a href="pages/step-scenarios/step_01624303563.html"><span
-                                                class="keyword">Quando </span> consultar este usuário</a>
+                                <span data-toggle="tooltip" title="steps.CorreioSteps.oStatusCodeDeveSer(int)">
+                                    <a href="pages/step-scenarios/step_581853920.html"><span
+                                                class="keyword">Entao </span> o status code deve ser <span class="parameter">200</span></a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 02s 187ms
+                                0m 00s 000ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
                             </div>
 
-        <div class="row w-100 p-3 m-0 scenarioOutput">
-            <div class="w-100 text-left small p-2">******* Dados enviados no request *******<br><br>GET https://gorest.co.in/public/v1/users/2778<br><br>Headers: {Authorization=Bearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept=application/json, Content-Type=application/json}<br><br>******* Dados recebidos do response *******<br><br>Status Code: 200<br><br>Payload recebido: 
-{
-    "meta": null,
-    "data": {
-        "id": 2778,
-        "name": "Polly Dent",
-        "email": "dorsey.shanahan@hotmail.com",
-        "gender": "male",
-        "status": "active"
-    }
-}<br><br>Tempo de resposta: 2140</div>
-        </div>
                         </div>
 
 
                         <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">3.</span>
-                                <span data-toggle="tooltip" title="steps.GorestSteps.statusCodeDoResponseDeveSer(java.lang.Integer)">
-                                    <a href="pages/step-scenarios/step_0483613333.html"><span
-                                                class="keyword">Entao </span> o status code do response deve ser <span class="parameter">200</span></a>
+                                <span data-toggle="tooltip" title="steps.CorreioSteps.oValorDoFreteDeveSerIgualA(java.lang.String)">
+                                    <a href="pages/step-scenarios/step_1369522495.html"><span
+                                                class="keyword">E </span> o valor do frete deve ser igual a <span class="parameter">"40,60"</span></a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 000ms
-                            </div>
-                            <div class="col-1 text-right">
-    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
-       title="passed"><span style="display:none">passed</span></i>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row row_passed table-row-passed">
-                            <div class="col-9 text-left">
-                                <span class="text-left">4.</span>
-                                <span data-toggle="tooltip" title="steps.GorestSteps.osDadosDoUsuárioDevemSerExibidosNaResposta()">
-                                    <a href="pages/step-scenarios/step_1045282029.html"><span
-                                                class="keyword">E </span> os dados do usuário devem ser exibidos na resposta</a>
-                                </span>
-                            </div>
-                            <div class="col-2 text-left small">
-                                0m 00s 000ms
+                                0m 00s 069ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -493,7 +484,7 @@ font-src * data: blob: 'unsafe-inline';"/>
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.6.1 - Report generated on 2021-11-28 16:41:14.</span>
+        <span>Cluecumber Report Plugin version 2.6.1 - Report generated on 2021-12-05 23:46:21.</span>
     </div>
 </footer>    </body>
     </html>

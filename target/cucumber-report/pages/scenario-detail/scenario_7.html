@@ -78,9 +78,11 @@ font-src * data: blob: 'unsafe-inline';"/>
   "data": {
     "labels": [
       "steps.Hooks.setup(io.cucumber.java.Scenario)",
-      "envio um request de cadastro de usuario com dados validos",
-      "o status code do response deve ser 201",
-      "o usuario deve ser criado corretamente",
+      "existe um usuário cadastrado na API",
+      "altero os dados do usuário",
+      "envio request para editar o usuário",
+      "o status code do response deve ser 200",
+      "o usuário deve ser alterado com sucesso",
       "steps.Hooks.tearDown()"
     ],
     "datasets": [
@@ -88,12 +90,16 @@ font-src * data: blob: 'unsafe-inline';"/>
         "data": [
           0,
           0,
-          3,
+          2,
+          0,
+          2,
           0,
           0,
           0
         ],
         "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
@@ -111,9 +117,13 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
@@ -131,9 +141,13 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
@@ -167,7 +181,7 @@ font-src * data: blob: 'unsafe-inline';"/>
         {
           "ticks": {
             "min": 0,
-            "stepSize": 3,
+            "stepSize": 2,
             "display": true
           },
           "stacked": true,
@@ -270,7 +284,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link " href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2021-12-05 23:46:21</span>
+            <span class="text-light">2021-12-05 23:46:22</span>
         </div>
     </nav>
     <main role="main" class="container">
@@ -280,7 +294,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                             <a href="pages/feature-scenarios/feature_1.html">Criar e editar conta de usuários</a>
                         <span class="small">file:src/test/resources/features/Gorest.feature</span>
                     </h5>
-                    <h3>Cadastrar novo usuário API Gorest</h3>
+                    <h3>Editar usuario na API</h3>
             </div>
 
     <div class="row" id="scenario-detail">
@@ -298,15 +312,15 @@ font-src * data: blob: 'unsafe-inline';"/>
         <div class="card h-100">
                 <div class="card-header">Scenario Info</div>
             <div class="card-body">
-                <li class="list-group-item">Started on:<br>2021-12-05 23:45:49</li>
-                <li class="list-group-item">Ended on:<br>2021-12-05 23:45:52</li>
-            <li class="list-group-item">Test Runtime:<br>0m 03s 287ms</li>
+                <li class="list-group-item">Started on:<br>2021-12-05 23:45:57</li>
+                <li class="list-group-item">Ended on:<br>2021-12-05 23:46:02</li>
+            <li class="list-group-item">Test Runtime:<br>0m 04s 899ms</li>
             <li class="list-group-item">
                     <a href="pages/tag-scenarios/tag_Gorest.html">@Gorest</a>,
 
                     <a href="pages/tag-scenarios/tag_Regressivo.html">@Regressivo</a>,
 
-                    <a href="pages/tag-scenarios/tag_POST.html">@POST</a>            </li>
+                    <a href="pages/tag-scenarios/tag_PUT.html">@PUT</a>            </li>
             </div>
         </div>
     </div>
@@ -316,11 +330,11 @@ font-src * data: blob: 'unsafe-inline';"/>
             <div class="card-body">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                    3         Steps
+                    5         Steps
 
                 </li>
                 <li class="list-group-item">
-                    3 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+                    5 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
 
                     <br>
@@ -356,7 +370,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 015ms
+                                0m 00s 000ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -379,13 +393,13 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">1.</span>
-                                <span data-toggle="tooltip" title="steps.GorestSteps.envioUmRequestDeCadastroDeUsuarioComDadosValidos()">
-                                    <a href="pages/step-scenarios/step_01073527759.html"><span
-                                                class="keyword">Quando </span> envio um request de cadastro de usuario com dados validos</a>
+                                <span data-toggle="tooltip" title="steps.GorestSteps.existeUmUsuárioCadastradoNaAPI()">
+                                    <a href="pages/step-scenarios/step_01243919266.html"><span
+                                                class="keyword">E </span> existe um usuário cadastrado na API</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 03s 009ms
+                                0m 02s 207ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -394,17 +408,17 @@ font-src * data: blob: 'unsafe-inline';"/>
 
         <div class="row w-100 p-3 m-0 scenarioOutput">
             <div class="w-100 text-left small p-2">******* Dados enviados no request *******<br><br>POST https://gorest.co.in/public/v1/users<br><br>Body: 
-{"gender":"male","name":"Lon Moore","email":"dong.hahn@hotmail.com","status":"active"}<br><br>Headers: {Authorization=Bearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept=application/json, Content-Type=application/json}<br><br>******* Dados recebidos do response *******<br><br>Status Code: 201<br><br>Payload recebido: 
+{"gender":"male","name":"Aretha Holly","email":"randi.cronin@gmail.com","status":"active"}<br><br>Headers: {Authorization=Bearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept=application/json, Content-Type=application/json}<br><br>******* Dados recebidos do response *******<br><br>Status Code: 201<br><br>Payload recebido: 
 {
     "meta": null,
     "data": {
-        "id": 3452,
-        "name": "Lon Moore",
-        "email": "dong.hahn@hotmail.com",
+        "id": 3455,
+        "name": "Aretha Holly",
+        "email": "randi.cronin@gmail.com",
         "gender": "male",
         "status": "active"
     }
-}<br><br>Tempo de resposta: 2523</div>
+}<br><br>Tempo de resposta: 2091</div>
         </div>
                         </div>
 
@@ -412,9 +426,61 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">2.</span>
+                                <span data-toggle="tooltip" title="steps.GorestSteps.alteroOsDadosDoUsuário()">
+                                    <a href="pages/step-scenarios/step_01217384430.html"><span
+                                                class="keyword">E </span> altero os dados do usuário</a>
+                                </span>
+                            </div>
+                            <div class="col-2 text-left small">
+                                0m 00s 037ms
+                            </div>
+                            <div class="col-1 text-right">
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row row_passed table-row-passed">
+                            <div class="col-9 text-left">
+                                <span class="text-left">3.</span>
+                                <span data-toggle="tooltip" title="steps.GorestSteps.envioRequestParaEditarOUsuário()">
+                                    <a href="pages/step-scenarios/step_42590577.html"><span
+                                                class="keyword">Quando </span> envio request para editar o usuário</a>
+                                </span>
+                            </div>
+                            <div class="col-2 text-left small">
+                                0m 02s 623ms
+                            </div>
+                            <div class="col-1 text-right">
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+                            </div>
+
+        <div class="row w-100 p-3 m-0 scenarioOutput">
+            <div class="w-100 text-left small p-2">******* Dados enviados no request *******<br><br>PUT https://gorest.co.in/public/v1/users/{user_id}<br><br>Body: 
+{"gender":"male","name":"Daisy Picking","email":"fatima.mosciski@yahoo.com","status":"active"}<br><br>Headers: {Authorization=Bearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept=application/json, Content-Type=application/json}<br><br>******* Dados recebidos do response *******<br><br>Status Code: 200<br><br>Payload recebido: 
+{
+    "meta": null,
+    "data": {
+        "email": "fatima.mosciski@yahoo.com",
+        "name": "Daisy Picking",
+        "gender": "male",
+        "status": "active",
+        "id": 3455
+    }
+}<br><br>Tempo de resposta: 2608</div>
+        </div>
+                        </div>
+
+
+                        <div class="row row_passed table-row-passed">
+                            <div class="col-9 text-left">
+                                <span class="text-left">4.</span>
                                 <span data-toggle="tooltip" title="steps.GorestSteps.statusCodeDoResponseDeveSer(java.lang.Integer)">
                                     <a href="pages/step-scenarios/step_0483613333.html"><span
-                                                class="keyword">Entao </span> o status code do response deve ser <span class="parameter">201</span></a>
+                                                class="keyword">Entao </span> o status code do response deve ser <span class="parameter">200</span></a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
@@ -430,14 +496,14 @@ font-src * data: blob: 'unsafe-inline';"/>
 
                         <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
-                                <span class="text-left">3.</span>
-                                <span data-toggle="tooltip" title="steps.GorestSteps.usuarioDeveSerCriadoCorretamente()">
-                                    <a href="pages/step-scenarios/step_1834380383.html"><span
-                                                class="keyword">E </span> o usuario deve ser criado corretamente</a>
+                                <span class="text-left">5.</span>
+                                <span data-toggle="tooltip" title="steps.GorestSteps.oUsuárioDeveSerAlteradoComSucesso()">
+                                    <a href="pages/step-scenarios/step_01943594744.html"><span
+                                                class="keyword">E </span> o usuário deve ser alterado com sucesso</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 263ms
+                                0m 00s 031ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -456,7 +522,7 @@ font-src * data: blob: 'unsafe-inline';"/>
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.6.1 - Report generated on 2021-12-05 23:46:21.</span>
+        <span>Cluecumber Report Plugin version 2.6.1 - Report generated on 2021-12-05 23:46:22.</span>
     </div>
 </footer>    </body>
     </html>

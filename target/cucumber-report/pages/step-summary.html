@@ -80,16 +80,22 @@ font-src * data: blob: 'unsafe-inline';"/>
       "os dados do usuário devem ser exibidos na resposta",
       "altero os dados do usuário",
       "envio request para editar parcialmente o usuário",
+      "envio um request de consulta para a API Correios",
       "existe um usuário cadastrado na API",
       "o status code do response deve ser {}",
       "o usuario deve ser criado corretamente",
+      "o status code deve ser {}",
+      "envio um request de consulta com cep origem {} e cep de destino {}",
       "o usuário deve ser alterado com sucesso",
       "envio um request de cadastro de usuario com dados validos",
+      "envio um request de consulta para a API Correios usando DataTable",
+      "o valor do frete deve ser calculado",
       "envio request para excluir este usuário",
       "envio request para editar o usuário",
       "consultar este usuário",
       "altero algum dado do usuário",
-      "o usuário deve ser excluido com sucesso"
+      "o usuário deve ser excluido com sucesso",
+      "o valor do frete deve ser igual a {}"
     ],
     "datasets": [
       {
@@ -97,18 +103,30 @@ font-src * data: blob: 'unsafe-inline';"/>
           1,
           1,
           1,
+          1,
           4,
           5,
           1,
+          4,
+          2,
           2,
           1,
           1,
           1,
           1,
           1,
-          1
+          1,
+          1,
+          1,
+          3
         ],
         "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
@@ -139,9 +157,21 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
@@ -172,9 +202,21 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
@@ -205,7 +247,7 @@ font-src * data: blob: 'unsafe-inline';"/>
           "stacked": true,
           "scaleLabel": {
             "display": true,
-            "labelString": "13 Steps"
+            "labelString": "19 Steps"
           },
           "stepSize": 0.0
         }
@@ -317,7 +359,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link " href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2021-11-28 16:41:14</span>
+            <span class="text-light">2021-12-05 23:46:22</span>
         </div>
     </nav>
     <main role="main" class="container">
@@ -343,14 +385,14 @@ font-src * data: blob: 'unsafe-inline';"/>
             <div class="card-body">
             <ul class="list-group list-group-flush" data-cluecumber-item="step-summary">
                 <li class="list-group-item">
-                    13         Steps
+                    19         Steps
  in
                     <br>
-                    5         Scenarios
+                    9         Scenarios
 
                 </li>
                 <li class="list-group-item">
-                    5 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+                    9 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
 
                     <br>
@@ -405,10 +447,10 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_2.html">0m 00s 000ms</a>
+                                <a href="pages/scenario-detail/scenario_6.html">0m 00s 000ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_2.html">0m 00s 000ms</a>
+                                <a href="pages/scenario-detail/scenario_6.html">0m 00s 000ms</a>
                         </td>
                         <td class="text-right small">0m 00s 000ms</td>
                     </tr>
@@ -423,12 +465,12 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_3.html">0m 00s 046ms</a>
+                                <a href="pages/scenario-detail/scenario_7.html">0m 00s 037ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_3.html">0m 00s 046ms</a>
+                                <a href="pages/scenario-detail/scenario_7.html">0m 00s 037ms</a>
                         </td>
-                        <td class="text-right small">0m 00s 046ms</td>
+                        <td class="text-right small">0m 00s 037ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -441,12 +483,30 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_4.html">0m 02s 343ms</a>
+                                <a href="pages/scenario-detail/scenario_8.html">0m 02s 124ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_4.html">0m 02s 343ms</a>
+                                <a href="pages/scenario-detail/scenario_8.html">0m 02s 124ms</a>
                         </td>
-                        <td class="text-right small">0m 02s 343ms</td>
+                        <td class="text-right small">0m 02s 124ms</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <span data-toggle="tooltip" title="steps.CorreioSteps.envioUmRequestDeConsulta()">
+                                <a href="pages/step-scenarios/step_0581273831.html">envio um request de consulta para a API Correios</a>
+                            </span>
+                        </td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right">1</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_1.html">0m 03s 526ms</a>
+                        </td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_1.html">0m 03s 526ms</a>
+                        </td>
+                        <td class="text-right small">0m 03s 526ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -459,12 +519,12 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_5.html">0m 02s 140ms</a>
+                                <a href="pages/scenario-detail/scenario_8.html">0m 02s 091ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_2.html">0m 02s 281ms</a>
+                                <a href="pages/scenario-detail/scenario_6.html">0m 02s 338ms</a>
                         </td>
-                        <td class="text-right small">0m 02s 222ms</td>
+                        <td class="text-right small">0m 02s 207ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -477,10 +537,10 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 000ms</a>
+                                <a href="pages/scenario-detail/scenario_5.html">0m 00s 000ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 000ms</a>
+                                <a href="pages/scenario-detail/scenario_5.html">0m 00s 000ms</a>
                         </td>
                         <td class="text-right small">0m 00s 000ms</td>
                     </tr>
@@ -495,12 +555,48 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 01s 078ms</a>
+                                <a href="pages/scenario-detail/scenario_5.html">0m 00s 263ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 01s 078ms</a>
+                                <a href="pages/scenario-detail/scenario_5.html">0m 00s 263ms</a>
                         </td>
-                        <td class="text-right small">0m 01s 078ms</td>
+                        <td class="text-right small">0m 00s 263ms</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <span data-toggle="tooltip" title="steps.CorreioSteps.oStatusCodeDeveSer(int)">
+                                <a href="pages/step-scenarios/step_581853920.html">o status code deve ser {}</a>
+                            </span>
+                        </td>
+                        <td class="text-right"><strong>4</strong></td>
+                        <td class="text-right">4</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 000ms</a>
+                        </td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 000ms</a>
+                        </td>
+                        <td class="text-right small">0m 00s 000ms</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <span data-toggle="tooltip" title="steps.CorreioSteps.envioUmRequestDeConsultaComCepOrigemECepDeDestino(java.lang.String,java.lang.String)">
+                                <a href="pages/step-scenarios/step_0201658667.html">envio um request de consulta com cep origem {} e cep de destino {}</a>
+                            </span>
+                        </td>
+                        <td class="text-right"><strong>2</strong></td>
+                        <td class="text-right">2</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_3.html">0m 00s 184ms</a>
+                        </td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_4.html">0m 00s 338ms</a>
+                        </td>
+                        <td class="text-right small">0m 00s 261ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -513,12 +609,12 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_3.html">0m 00s 031ms</a>
+                                <a href="pages/scenario-detail/scenario_8.html">0m 00s 015ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_4.html">0m 00s 031ms</a>
+                                <a href="pages/scenario-detail/scenario_7.html">0m 00s 031ms</a>
                         </td>
-                        <td class="text-right small">0m 00s 031ms</td>
+                        <td class="text-right small">0m 00s 023ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -531,12 +627,48 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 05s 781ms</a>
+                                <a href="pages/scenario-detail/scenario_5.html">0m 03s 009ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 05s 781ms</a>
+                                <a href="pages/scenario-detail/scenario_5.html">0m 03s 009ms</a>
                         </td>
-                        <td class="text-right small">0m 05s 781ms</td>
+                        <td class="text-right small">0m 03s 009ms</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <span data-toggle="tooltip" title="steps.CorreioSteps.envioUmRequestDeConsultaParaAAPICorreiosUsandoDataTable(io.cucumber.datatable.DataTable)">
+                                <a href="pages/step-scenarios/step_1455034894.html">envio um request de consulta para a API Correios usando DataTable</a>
+                            </span>
+                        </td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right">1</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_2.html">0m 00s 216ms</a>
+                        </td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_2.html">0m 00s 216ms</a>
+                        </td>
+                        <td class="text-right small">0m 00s 216ms</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <span data-toggle="tooltip" title="steps.CorreioSteps.oValorDoFreteDeveSerCalculado()">
+                                <a href="pages/step-scenarios/step_01676870181.html">o valor do frete deve ser calculado</a>
+                            </span>
+                        </td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right">1</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 933ms</a>
+                        </td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 933ms</a>
+                        </td>
+                        <td class="text-right small">0m 00s 933ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -549,12 +681,12 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_5.html">0m 02s 093ms</a>
+                                <a href="pages/scenario-detail/scenario_9.html">0m 02s 245ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_5.html">0m 02s 093ms</a>
+                                <a href="pages/scenario-detail/scenario_9.html">0m 02s 245ms</a>
                         </td>
-                        <td class="text-right small">0m 02s 093ms</td>
+                        <td class="text-right small">0m 02s 245ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -567,12 +699,12 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_3.html">0m 02s 156ms</a>
+                                <a href="pages/scenario-detail/scenario_7.html">0m 02s 623ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_3.html">0m 02s 156ms</a>
+                                <a href="pages/scenario-detail/scenario_7.html">0m 02s 623ms</a>
                         </td>
-                        <td class="text-right small">0m 02s 156ms</td>
+                        <td class="text-right small">0m 02s 623ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -585,12 +717,12 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_2.html">0m 02s 187ms</a>
+                                <a href="pages/scenario-detail/scenario_6.html">0m 02s 122ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_2.html">0m 02s 187ms</a>
+                                <a href="pages/scenario-detail/scenario_6.html">0m 02s 122ms</a>
                         </td>
-                        <td class="text-right small">0m 02s 187ms</td>
+                        <td class="text-right small">0m 02s 122ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -603,10 +735,10 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_4.html">0m 00s 000ms</a>
+                                <a href="pages/scenario-detail/scenario_8.html">0m 00s 000ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_4.html">0m 00s 000ms</a>
+                                <a href="pages/scenario-detail/scenario_8.html">0m 00s 000ms</a>
                         </td>
                         <td class="text-right small">0m 00s 000ms</td>
                     </tr>
@@ -621,12 +753,30 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_5.html">0m 02s 078ms</a>
+                                <a href="pages/scenario-detail/scenario_9.html">0m 02s 139ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_5.html">0m 02s 078ms</a>
+                                <a href="pages/scenario-detail/scenario_9.html">0m 02s 139ms</a>
                         </td>
-                        <td class="text-right small">0m 02s 078ms</td>
+                        <td class="text-right small">0m 02s 139ms</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <span data-toggle="tooltip" title="steps.CorreioSteps.oValorDoFreteDeveSerIgualA(java.lang.String)">
+                                <a href="pages/step-scenarios/step_1369522495.html">o valor do frete deve ser igual a {}</a>
+                            </span>
+                        </td>
+                        <td class="text-right"><strong>3</strong></td>
+                        <td class="text-right">3</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_4.html">0m 00s 031ms</a>
+                        </td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_2.html">0m 00s 069ms</a>
+                        </td>
+                        <td class="text-right small">0m 00s 049ms</td>
                     </tr>
                 </tbody>
             </table>
@@ -639,7 +789,7 @@ font-src * data: blob: 'unsafe-inline';"/>
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.6.1 - Report generated on 2021-11-28 16:41:14.</span>
+        <span>Cluecumber Report Plugin version 2.6.1 - Report generated on 2021-12-05 23:46:22.</span>
     </div>
 </footer>    </body>
     </html>

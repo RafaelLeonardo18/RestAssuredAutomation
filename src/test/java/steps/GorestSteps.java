@@ -31,7 +31,7 @@ public class GorestSteps extends ApiRequests {
 
     @Quando("envio um request de cadastro de usuario com dados validos")
     public void envioUmRequestDeCadastroDeUsuarioComDadosValidos() throws Exception {
-        super.uri = PropertiesUtils.getProperties("uri_gorest");
+        super.uri = PropertiesUtils.getProperties("uri_gorest_create_user");
         super.headers = ApiHeaders.createRequestHeaders(super.uri, super.token);
         super.body = ApiBodies.createRequestBody(super.uri);
         super.POST();
@@ -47,11 +47,12 @@ public class GorestSteps extends ApiRequests {
     @E("existe um usuário cadastrado na API")
     public void existeUmUsuárioCadastradoNaAPI() throws Exception{
         envioUmRequestDeCadastroDeUsuarioComDadosValidos();
+        super.pathParams.put("user_id", super.response.jsonPath().get("data.id").toString());
     }
 
     @Quando("consultar este usuário")
     public void consultarEsteUsuário() {
-        super.uri = PropertiesUtils.getProperties("uri_gorest") + "/" + super.response.jsonPath().get("data.id").toString();
+        super.uri = PropertiesUtils.getProperties("uri_gorest_get_user");
         super.headers = ApiHeaders.createRequestHeaders(super.uri, super.token);
         super.body = new JSONObject();
         super.GET();
@@ -75,7 +76,7 @@ public class GorestSteps extends ApiRequests {
 
     @Quando("envio request para editar o usuário")
     public void envioRequestParaEditarOUsuário() {
-        super.uri = PropertiesUtils.getProperties("uri_gorest") + "/" + super.response.jsonPath().get("data.id").toString();
+        super.uri = PropertiesUtils.getProperties("uri_gorest_get_user");
         super.headers = ApiHeaders.createRequestHeaders(super.uri, super.token);
         super.PUT();
     }
@@ -94,14 +95,14 @@ public class GorestSteps extends ApiRequests {
 
     @Quando("envio request para editar parcialmente o usuário")
     public void envioRequestParaEditarParcialmenteOUsuário() {
-        super.uri = PropertiesUtils.getProperties("uri_gorest") + "/" + super.response.jsonPath().get("data.id").toString();
+        super.uri = PropertiesUtils.getProperties("uri_gorest_get_user");
         super.headers = ApiHeaders.createRequestHeaders(super.uri, super.token);
         super.PATCH();
     }
 
     @Quando("envio request para excluir este usuário")
     public void envioRequestParaExcluirEsteUsuário() {
-        super.uri = PropertiesUtils.getProperties("uri_gorest") + "/" + super.response.jsonPath().get("data.id").toString();
+        super.uri = PropertiesUtils.getProperties("uri_gorest_get_user");
         super.headers = ApiHeaders.createRequestHeaders(super.uri, super.token);
         super.body = new JSONObject();
         super.DELETE();

@@ -20,7 +20,8 @@ public class ApiUtils extends LogUtils {
     protected JSONObject body;
     protected String uri;
     protected Map<String, String> headers = new HashMap<String, String>();
-    protected Map<String, String> params = new HashMap<String, String>();
+    protected Map<String, String> queryParams = new HashMap<String, String>();
+    protected Map<String, String> pathParams = new HashMap<String, String>();
     protected String token;
 
     //Método para exibir os logs da requisição e resposta
@@ -29,7 +30,7 @@ public class ApiUtils extends LogUtils {
         super.logInfo(verbose + " " + uri);
         super.logInfo("Body: \n" + body);
         super.logInfo("Headers: " + headers);
-        super.logInfo("Params: " + params);
+        super.logInfo("Params: " + queryParams);
         super.logInfo("******* Dados recebidos do response *******");
         super.logInfo("Status Code: " + response.statusCode());
         super.logInfo("Payload recebido: \n" + response.asPrettyString());

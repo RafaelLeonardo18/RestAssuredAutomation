@@ -19,7 +19,7 @@ import java.io.IOException;
         publish = true,
         features = {"src/test/resources/features"},
         glue = {"steps"},
-        tags = "@Gorest")
+        tags = "@Regressivo")
 
 public class RunTest {
 

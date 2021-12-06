@@ -1,7 +1,7 @@
 # language: pt
 # encoding: UTF-8
 
-@Gorest
+@Gorest @Regressivo
 Funcionalidade: Criar e editar conta de usuários
   Eu como administrador do sistema
   Quero cadastrar, editar e excluir usuários do sistema
