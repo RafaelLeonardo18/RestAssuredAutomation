@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6525400,
+              "duration": 7005300,
               "status": "passed"
             },
             "line": 11,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-06T02:45:43.710Z",
+        "start_timestamp": "2021-12-09T02:04:40.398Z",
         "before": [
           {
             "result": {
-              "duration": 15630300,
+              "duration": 6998600,
               "status": "passed"
             },
             "match": {
@@ -43,6 +43,7 @@
         "after": [
           {
             "result": {
+              "duration": 3997100,
               "status": "passed"
             },
             "match": {
@@ -62,10 +63,10 @@
               "******* Dados recebidos do response *******",
               "Status Code: 200",
               "Payload recebido: \n\u003cServicos\u003e\n  \u003ccServico\u003e\n    \u003cCodigo\u003e04510\u003c/Codigo\u003e\n    \u003cValor\u003e31,00\u003c/Valor\u003e\n    \u003cPrazoEntrega\u003e15\u003c/PrazoEntrega\u003e\n    \u003cValorSemAdicionais\u003e31,00\u003c/ValorSemAdicionais\u003e\n    \u003cValorMaoPropria\u003e0,00\u003c/ValorMaoPropria\u003e\n    \u003cValorAvisoRecebimento\u003e0,00\u003c/ValorAvisoRecebimento\u003e\n    \u003cValorValorDeclarado\u003e0,00\u003c/ValorValorDeclarado\u003e\n    \u003cEntregaDomiciliar\u003eS\u003c/EntregaDomiciliar\u003e\n    \u003cEntregaSabado\u003eN\u003c/EntregaSabado\u003e\n    \u003cobsFim\u003eO CEP de destino está sujeito a condições especiais de entrega pela  ECT e será realizada com o acréscimo de até 5 (cinco) dias úteis ao prazo regular.\u003c/obsFim\u003e\n    \u003cErro\u003e011\u003c/Erro\u003e\n    \u003cMsgErro\u003eO CEP de destino está sujeito a condições especiais de entrega pela  ECT e será realizada com o acréscimo de até 5 (cinco) dias úteis ao prazo regular.\u003c/MsgErro\u003e\n  \u003c/cServico\u003e\n\u003c/Servicos\u003e",
-              "Tempo de resposta: 1003"
+              "Tempo de resposta: 1221"
             ],
             "result": {
-              "duration": 3526323900,
+              "duration": 4498998300,
               "status": "passed"
             },
             "line": 15,
@@ -77,6 +78,7 @@
           },
           {
             "result": {
+              "duration": 8999900,
               "status": "passed"
             },
             "line": 16,
@@ -94,7 +96,7 @@
           },
           {
             "result": {
-              "duration": 933968400,
+              "duration": 1196996300,
               "status": "passed"
             },
             "line": 17,
@@ -126,6 +128,7 @@
         "steps": [
           {
             "result": {
+              "duration": 7999100,
               "status": "passed"
             },
             "line": 11,
@@ -138,7 +141,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-06T02:45:48.377Z",
+        "start_timestamp": "2021-12-09T02:04:46.357Z",
         "before": [
           {
             "result": {
@@ -175,10 +178,10 @@
               "******* Dados recebidos do response *******",
               "Status Code: 200",
               "Payload recebido: \n\u003cServicos\u003e\n  \u003ccServico\u003e\n    \u003cCodigo\u003e04510\u003c/Codigo\u003e\n    \u003cValor\u003e40,60\u003c/Valor\u003e\n    \u003cPrazoEntrega\u003e7\u003c/PrazoEntrega\u003e\n    \u003cValorSemAdicionais\u003e40,60\u003c/ValorSemAdicionais\u003e\n    \u003cValorMaoPropria\u003e0,00\u003c/ValorMaoPropria\u003e\n    \u003cValorAvisoRecebimento\u003e0,00\u003c/ValorAvisoRecebimento\u003e\n    \u003cValorValorDeclarado\u003e0,00\u003c/ValorValorDeclarado\u003e\n    \u003cEntregaDomiciliar\u003eS\u003c/EntregaDomiciliar\u003e\n    \u003cEntregaSabado\u003eN\u003c/EntregaSabado\u003e\n    \u003cobsFim/\u003e\n    \u003cErro\u003e0\u003c/Erro\u003e\n    \u003cMsgErro/\u003e\n  \u003c/cServico\u003e\n\u003c/Servicos\u003e",
-              "Tempo de resposta: 201"
+              "Tempo de resposta: 212"
             ],
             "result": {
-              "duration": 216283800,
+              "duration": 248004700,
               "status": "passed"
             },
             "line": 21,
@@ -229,7 +232,7 @@
           },
           {
             "result": {
-              "duration": 69040400,
+              "duration": 80999100,
               "status": "passed"
             },
             "line": 25,
@@ -267,6 +270,7 @@
         "steps": [
           {
             "result": {
+              "duration": 4028200,
               "status": "passed"
             },
             "line": 11,
@@ -279,7 +283,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-06T02:45:48.709Z",
+        "start_timestamp": "2021-12-09T02:04:46.745Z",
         "before": [
           {
             "result": {
@@ -297,6 +301,7 @@
         "after": [
           {
             "result": {
+              "duration": 1991900,
               "status": "passed"
             },
             "match": {
@@ -316,10 +321,10 @@
               "******* Dados recebidos do response *******",
               "Status Code: 200",
               "Payload recebido: \n\u003cServicos\u003e\n  \u003ccServico\u003e\n    \u003cCodigo\u003e04510\u003c/Codigo\u003e\n    \u003cValor\u003e24,80\u003c/Valor\u003e\n    \u003cPrazoEntrega\u003e10\u003c/PrazoEntrega\u003e\n    \u003cValorSemAdicionais\u003e24,80\u003c/ValorSemAdicionais\u003e\n    \u003cValorMaoPropria\u003e0,00\u003c/ValorMaoPropria\u003e\n    \u003cValorAvisoRecebimento\u003e0,00\u003c/ValorAvisoRecebimento\u003e\n    \u003cValorValorDeclarado\u003e0,00\u003c/ValorValorDeclarado\u003e\n    \u003cEntregaDomiciliar\u003eS\u003c/EntregaDomiciliar\u003e\n    \u003cEntregaSabado\u003eN\u003c/EntregaSabado\u003e\n    \u003cobsFim/\u003e\n    \u003cErro\u003e0\u003c/Erro\u003e\n    \u003cMsgErro/\u003e\n  \u003c/cServico\u003e\n\u003c/Servicos\u003e",
-              "Tempo de resposta: 169"
+              "Tempo de resposta: 250"
             ],
             "result": {
-              "duration": 184967800,
+              "duration": 276997700,
               "status": "passed"
             },
             "line": 29,
@@ -358,7 +363,7 @@
           },
           {
             "result": {
-              "duration": 46884900,
+              "duration": 49998000,
               "status": "passed"
             },
             "line": 31,
@@ -396,7 +401,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15628600,
+              "duration": 1004900,
               "status": "passed"
             },
             "line": 11,
@@ -409,10 +414,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-06T02:45:48.957Z",
+        "start_timestamp": "2021-12-09T02:04:47.113Z",
         "before": [
           {
             "result": {
+              "duration": 1001000,
               "status": "passed"
             },
             "match": {
@@ -427,6 +433,7 @@
         "after": [
           {
             "result": {
+              "duration": 993500,
               "status": "passed"
             },
             "match": {
@@ -446,10 +453,10 @@
               "******* Dados recebidos do response *******",
               "Status Code: 200",
               "Payload recebido: \n\u003cServicos\u003e\n  \u003ccServico\u003e\n    \u003cCodigo\u003e04510\u003c/Codigo\u003e\n    \u003cValor\u003e31,00\u003c/Valor\u003e\n    \u003cPrazoEntrega\u003e15\u003c/PrazoEntrega\u003e\n    \u003cValorSemAdicionais\u003e31,00\u003c/ValorSemAdicionais\u003e\n    \u003cValorMaoPropria\u003e0,00\u003c/ValorMaoPropria\u003e\n    \u003cValorAvisoRecebimento\u003e0,00\u003c/ValorAvisoRecebimento\u003e\n    \u003cValorValorDeclarado\u003e0,00\u003c/ValorValorDeclarado\u003e\n    \u003cEntregaDomiciliar\u003eS\u003c/EntregaDomiciliar\u003e\n    \u003cEntregaSabado\u003eN\u003c/EntregaSabado\u003e\n    \u003cobsFim\u003eO CEP de destino está sujeito a condições especiais de entrega pela  ECT e será realizada com o acréscimo de até 5 (cinco) dias úteis ao prazo regular.\u003c/obsFim\u003e\n    \u003cErro\u003e011\u003c/Erro\u003e\n    \u003cMsgErro\u003eO CEP de destino está sujeito a condições especiais de entrega pela  ECT e será realizada com o acréscimo de até 5 (cinco) dias úteis ao prazo regular.\u003c/MsgErro\u003e\n  \u003c/cServico\u003e\n\u003c/Servicos\u003e",
-              "Tempo de resposta: 317"
+              "Tempo de resposta: 280"
             ],
             "result": {
-              "duration": 338843500,
+              "duration": 306001700,
               "status": "passed"
             },
             "line": 29,
@@ -488,7 +495,7 @@
           },
           {
             "result": {
-              "duration": 31242000,
+              "duration": 40008200,
               "status": "passed"
             },
             "line": 31,
@@ -554,7 +561,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15655100,
+              "duration": 11010300,
               "status": "passed"
             },
             "line": 11,
@@ -567,10 +574,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-06T02:45:49.374Z",
+        "start_timestamp": "2021-12-09T02:04:47.513Z",
         "before": [
           {
             "result": {
+              "duration": 2997700,
               "status": "passed"
             },
             "match": {
@@ -599,15 +607,15 @@
             "output": [
               "******* Dados enviados no request *******",
               "POST https://gorest.co.in/public/v1/users",
-              "Body: \n{\"gender\":\"male\",\"name\":\"Lon Moore\",\"email\":\"dong.hahn@hotmail.com\",\"status\":\"active\"}",
+              "Body: \n{\"gender\":\"male\",\"name\":\"Ellie Noise\",\"email\":\"maximina.abernathy@hotmail.com\",\"status\":\"active\"}",
               "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "******* Dados recebidos do response *******",
               "Status Code: 201",
-              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 3452,\n        \"name\": \"Lon Moore\",\n        \"email\": \"dong.hahn@hotmail.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
-              "Tempo de resposta: 2523"
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 2858,\n        \"name\": \"Ellie Noise\",\n        \"email\": \"maximina.abernathy@hotmail.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
+              "Tempo de resposta: 2865"
             ],
             "result": {
-              "duration": 3009159500,
+              "duration": 3480506200,
               "status": "passed"
             },
             "line": 15,
@@ -619,6 +627,7 @@
           },
           {
             "result": {
+              "duration": 997800,
               "status": "passed"
             },
             "line": 16,
@@ -636,7 +645,7 @@
           },
           {
             "result": {
-              "duration": 263089500,
+              "duration": 379007700,
               "status": "passed"
             },
             "line": 17,
@@ -668,6 +677,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1995700,
               "status": "passed"
             },
             "line": 11,
@@ -680,7 +690,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-06T02:45:52.691Z",
+        "start_timestamp": "2021-12-09T02:04:51.442Z",
         "before": [
           {
             "result": {
@@ -712,15 +722,15 @@
             "output": [
               "******* Dados enviados no request *******",
               "POST https://gorest.co.in/public/v1/users",
-              "Body: \n{\"gender\":\"male\",\"name\":\"Max E. Mumm\",\"email\":\"marianna.morar@yahoo.com\",\"status\":\"active\"}",
+              "Body: \n{\"gender\":\"male\",\"name\":\"Cal Seeium\",\"email\":\"tiana.padberg@gmail.com\",\"status\":\"active\"}",
               "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "******* Dados recebidos do response *******",
               "Status Code: 201",
-              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 3453,\n        \"name\": \"Max E. Mumm\",\n        \"email\": \"marianna.morar@yahoo.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
-              "Tempo de resposta: 2160"
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 2859,\n        \"name\": \"Cal Seeium\",\n        \"email\": \"tiana.padberg@gmail.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
+              "Tempo de resposta: 2145"
             ],
             "result": {
-              "duration": 2338325000,
+              "duration": 2446574400,
               "status": "passed"
             },
             "line": 21,
@@ -737,11 +747,11 @@
               "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "******* Dados recebidos do response *******",
               "Status Code: 200",
-              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 3453,\n        \"name\": \"Max E. Mumm\",\n        \"email\": \"marianna.morar@yahoo.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
-              "Tempo de resposta: 2123"
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 2859,\n        \"name\": \"Cal Seeium\",\n        \"email\": \"tiana.padberg@gmail.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
+              "Tempo de resposta: 2589"
             ],
             "result": {
-              "duration": 2122915200,
+              "duration": 2604514500,
               "status": "passed"
             },
             "line": 22,
@@ -801,6 +811,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1992600,
               "status": "passed"
             },
             "line": 11,
@@ -813,7 +824,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-06T02:45:57.167Z",
+        "start_timestamp": "2021-12-09T02:04:56.523Z",
         "before": [
           {
             "result": {
@@ -845,15 +856,15 @@
             "output": [
               "******* Dados enviados no request *******",
               "POST https://gorest.co.in/public/v1/users",
-              "Body: \n{\"gender\":\"male\",\"name\":\"Aretha Holly\",\"email\":\"randi.cronin@gmail.com\",\"status\":\"active\"}",
+              "Body: \n{\"gender\":\"male\",\"name\":\"Darren Deeds\",\"email\":\"darell.lubowitz@gmail.com\",\"status\":\"active\"}",
               "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "******* Dados recebidos do response *******",
               "Status Code: 201",
-              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 3455,\n        \"name\": \"Aretha Holly\",\n        \"email\": \"randi.cronin@gmail.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
-              "Tempo de resposta: 2091"
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 2860,\n        \"name\": \"Darren Deeds\",\n        \"email\": \"darell.lubowitz@gmail.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
+              "Tempo de resposta: 2873"
             ],
             "result": {
-              "duration": 2207462700,
+              "duration": 3016628400,
               "status": "passed"
             },
             "line": 28,
@@ -865,7 +876,7 @@
           },
           {
             "result": {
-              "duration": 37792300,
+              "duration": 66993500,
               "status": "passed"
             },
             "line": 29,
@@ -879,15 +890,15 @@
             "output": [
               "******* Dados enviados no request *******",
               "PUT https://gorest.co.in/public/v1/users/{user_id}",
-              "Body: \n{\"gender\":\"male\",\"name\":\"Daisy Picking\",\"email\":\"fatima.mosciski@yahoo.com\",\"status\":\"active\"}",
+              "Body: \n{\"gender\":\"male\",\"name\":\"Lisa Ford\",\"email\":\"jackie.larson@gmail.com\",\"status\":\"active\"}",
               "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "******* Dados recebidos do response *******",
               "Status Code: 200",
-              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"email\": \"fatima.mosciski@yahoo.com\",\n        \"name\": \"Daisy Picking\",\n        \"gender\": \"male\",\n        \"status\": \"active\",\n        \"id\": 3455\n    }\n}",
-              "Tempo de resposta: 2608"
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"email\": \"jackie.larson@gmail.com\",\n        \"name\": \"Lisa Ford\",\n        \"gender\": \"male\",\n        \"status\": \"active\",\n        \"id\": 2860\n    }\n}",
+              "Tempo de resposta: 2487"
             ],
             "result": {
-              "duration": 2623558600,
+              "duration": 2503837900,
               "status": "passed"
             },
             "line": 30,
@@ -916,7 +927,7 @@
           },
           {
             "result": {
-              "duration": 31180600,
+              "duration": 26999200,
               "status": "passed"
             },
             "line": 32,
@@ -948,6 +959,7 @@
         "steps": [
           {
             "result": {
+              "duration": 5008300,
               "status": "passed"
             },
             "line": 11,
@@ -960,10 +972,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-06T02:46:02.083Z",
+        "start_timestamp": "2021-12-09T02:05:02.175Z",
         "before": [
           {
             "result": {
+              "duration": 1005400,
               "status": "passed"
             },
             "match": {
@@ -992,15 +1005,15 @@
             "output": [
               "******* Dados enviados no request *******",
               "POST https://gorest.co.in/public/v1/users",
-              "Body: \n{\"gender\":\"male\",\"name\":\"Bill Ding\",\"email\":\"leesa.klein@hotmail.com\",\"status\":\"active\"}",
+              "Body: \n{\"gender\":\"male\",\"name\":\"Sam Dayoulpay\",\"email\":\"jack.treutel@yahoo.com\",\"status\":\"active\"}",
               "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "******* Dados recebidos do response *******",
               "Status Code: 201",
-              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 3458,\n        \"name\": \"Bill Ding\",\n        \"email\": \"leesa.klein@hotmail.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
-              "Tempo de resposta: 2038"
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 2861,\n        \"name\": \"Sam Dayoulpay\",\n        \"email\": \"jack.treutel@yahoo.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
+              "Tempo de resposta: 2645"
             ],
             "result": {
-              "duration": 2091443400,
+              "duration": 2795835200,
               "status": "passed"
             },
             "line": 36,
@@ -1012,6 +1025,7 @@
           },
           {
             "result": {
+              "duration": 998100,
               "status": "passed"
             },
             "line": 37,
@@ -1029,11 +1043,11 @@
               "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "******* Dados recebidos do response *******",
               "Status Code: 200",
-              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"gender\": \"female\",\n        \"id\": 3458,\n        \"name\": \"Bill Ding\",\n        \"email\": \"leesa.klein@hotmail.com\",\n        \"status\": \"active\"\n    }\n}",
-              "Tempo de resposta: 2109"
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"gender\": \"female\",\n        \"id\": 2861,\n        \"name\": \"Sam Dayoulpay\",\n        \"email\": \"jack.treutel@yahoo.com\",\n        \"status\": \"active\"\n    }\n}",
+              "Tempo de resposta: 3274"
             ],
             "result": {
-              "duration": 2124490300,
+              "duration": 3284749000,
               "status": "passed"
             },
             "line": 38,
@@ -1045,6 +1059,7 @@
           },
           {
             "result": {
+              "duration": 996900,
               "status": "passed"
             },
             "line": 39,
@@ -1062,7 +1077,7 @@
           },
           {
             "result": {
-              "duration": 15632600,
+              "duration": 22006100,
               "status": "passed"
             },
             "line": 40,
@@ -1094,6 +1109,7 @@
         "steps": [
           {
             "result": {
+              "duration": 997100,
               "status": "passed"
             },
             "line": 11,
@@ -1106,11 +1122,10 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-06T02:46:06.330Z",
+        "start_timestamp": "2021-12-09T02:05:08.321Z",
         "before": [
           {
             "result": {
-              "duration": 15617800,
               "status": "passed"
             },
             "match": {
@@ -1125,6 +1140,7 @@
         "after": [
           {
             "result": {
+              "duration": 999300,
               "status": "passed"
             },
             "match": {
@@ -1139,15 +1155,15 @@
             "output": [
               "******* Dados enviados no request *******",
               "POST https://gorest.co.in/public/v1/users",
-              "Body: \n{\"gender\":\"male\",\"name\":\"Ed Jewcation\",\"email\":\"rosenda.kiehn@hotmail.com\",\"status\":\"active\"}",
+              "Body: \n{\"gender\":\"male\",\"name\":\"R. M. Pitt\",\"email\":\"carl.stamm@hotmail.com\",\"status\":\"active\"}",
               "Headers: {Authorization\u003dBearer 026b4e1473029478af6915dcb92f0c2d1fd7a3f0ec1bb7c1fb92e4d1b92a0b91, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "******* Dados recebidos do response *******",
               "Status Code: 201",
-              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 3460,\n        \"name\": \"Ed Jewcation\",\n        \"email\": \"rosenda.kiehn@hotmail.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
-              "Tempo de resposta: 2123"
+              "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 2862,\n        \"name\": \"R. M. Pitt\",\n        \"email\": \"carl.stamm@hotmail.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}",
+              "Tempo de resposta: 2689"
             ],
             "result": {
-              "duration": 2191598900,
+              "duration": 2793763400,
               "status": "passed"
             },
             "line": 44,
@@ -1165,10 +1181,10 @@
               "******* Dados recebidos do response *******",
               "Status Code: 204",
               "Payload recebido: \n",
-              "Tempo de resposta: 2215"
+              "Tempo de resposta: 2142"
             ],
             "result": {
-              "duration": 2245690100,
+              "duration": 2150983000,
               "status": "passed"
             },
             "line": 45,
@@ -1203,10 +1219,10 @@
               "******* Dados recebidos do response *******",
               "Status Code: 404",
               "Payload recebido: \n{\n    \"meta\": null,\n    \"data\": {\n        \"message\": \"Resource not found\"\n    }\n}",
-              "Tempo de resposta: 2139"
+              "Tempo de resposta: 2579"
             ],
             "result": {
-              "duration": 2139092400,
+              "duration": 2586201100,
               "status": "passed"
             },
             "line": 47,

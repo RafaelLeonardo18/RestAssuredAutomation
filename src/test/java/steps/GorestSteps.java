@@ -9,7 +9,7 @@ import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import org.json.JSONObject;
-import user.UserConstrutor;
+import user.User;
 import utils.PropertiesUtils;
 
 import static org.junit.Assert.*;
@@ -22,7 +22,7 @@ import static org.junit.Assert.*;
 
 public class GorestSteps extends ApiRequests {
 
-    UserConstrutor userRequest = new UserConstrutor(), userResponse = new UserConstrutor();
+    User userRequest = User.builder().build(), userResponse = User.builder().build();
 
     @Dado("que possuo gorest token valido")
     public void quePossuoGorestTokenValido(){
@@ -39,8 +39,8 @@ public class GorestSteps extends ApiRequests {
 
     @E("o usuario deve ser criado corretamente")
     public void usuarioDeveSerCriadoCorretamente() {
-        this.userRequest = new Gson().fromJson(super.body.toString(), UserConstrutor.class);
-        this.userResponse = super.response.jsonPath().getObject("data", UserConstrutor.class);
+        this.userRequest = new Gson().fromJson(super.body.toString(), User.class);
+        this.userResponse = super.response.jsonPath().getObject("data", User.class);
         assertTrue("Os objetos não são iguais", this.userRequest.equals(this.userResponse));
     }
 
@@ -70,7 +70,7 @@ public class GorestSteps extends ApiRequests {
 
     @E("altero os dados do usuário")
     public void alteroOsDadosDoUsuário() {
-        this.userRequest = new Gson().fromJson(super.body.toString(), UserConstrutor.class);
+        this.userRequest = new Gson().fromJson(super.body.toString(), User.class);
         super.body = ApiBodies.createRequestBody(super.uri);
     }
 
@@ -83,13 +83,13 @@ public class GorestSteps extends ApiRequests {
 
     @E("o usuário deve ser alterado com sucesso")
     public void oUsuárioDeveSerAlteradoComSucesso() {
-        this.userResponse = super.response.jsonPath().getObject("data", UserConstrutor.class);
+        this.userResponse = super.response.jsonPath().getObject("data", User.class);
         assertFalse("O usuário não foi alterado", userRequest.equals(userResponse));
     }
 
     @E("altero algum dado do usuário")
     public void alteroAlgumDadoDoUsuário() {
-        this.userRequest = new Gson().fromJson(super.body.toString(), UserConstrutor.class);
+        this.userRequest = new Gson().fromJson(super.body.toString(), User.class);
         this.body = new JSONObject("{\"gender\": \"female\"}");
     }
 

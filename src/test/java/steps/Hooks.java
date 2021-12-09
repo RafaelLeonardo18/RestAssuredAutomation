@@ -4,6 +4,7 @@ import api.ApiUtils;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import org.json.JSONObject;
 import utils.ScenarioUtils;
 
 /**************************************************************************************************
@@ -22,5 +23,11 @@ public class Hooks extends ApiUtils {
     @After
     public void tearDown(){
         ScenarioUtils.remove();
+        super.uri = new String();
+        super.token = new String();
+        super.body = new JSONObject();
+        super.headers.clear();
+        super.queryParams.clear();
+        super.pathParams.clear();
     }
 }

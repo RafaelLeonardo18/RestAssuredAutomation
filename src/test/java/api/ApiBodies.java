@@ -3,7 +3,7 @@ package api;
 import com.github.javafaker.Faker;
 import org.json.JSONObject;
 import payload.Payload;
-import user.UserLombok;
+import user.User;
 
 public class ApiBodies {
 
@@ -16,7 +16,7 @@ public class ApiBodies {
     }
 
     private static JSONObject gorestBody() {
-        Payload payload = UserLombok.builder()
+        Payload payload = User.builder()
                 .name(new Faker().funnyName().name())
                 .gender("male")
                 .email(new Faker().internet().emailAddress())
