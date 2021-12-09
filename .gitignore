@@ -1,0 +1,5 @@
+# Arquivos locais do Intellij IDEA
+.idea/
+
+# Relatórios gerados pelo Cucumber
+target/
